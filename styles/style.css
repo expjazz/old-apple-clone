@@ -8,7 +8,8 @@ body a {
 
 .header {
   height: 600px;
-  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg)
+  background:
+    url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg)
     50% 100% no-repeat;
   display: flex;
   flex-direction: column;
@@ -19,9 +20,9 @@ body a {
 .header .nav ul {
   display: flex;
   justify-content: space-around;
-  align-items: stretch;
   width: 80vw;
-  background: -webkit-gradient(
+  background:
+    s-webkit-gradient(
       linear,
       0 0,
       0 100%,
@@ -32,13 +33,14 @@ body a {
     ),
     -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2))),
     url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFW…px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC)
-      no-repeat 50% 50%,
+    no-repeat 50% 50%,
     -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
   align-items: center;
   border-radius: 5px;
   box-shadow: 0.2px 0.4px;
   border: 1px solid #4c4c4c;
 }
+
 .header .nav ul li {
   flex-grow: 1;
   text-align: center;
@@ -48,13 +50,43 @@ body a {
 }
 
 .header .nav ul li:hover {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAkCAQAAADifZiHAAAAJ0lEQVQIW2P4L8zE8JeJ4R8q%2Bo%2BKCIH%2FjEA1TAyMSIgJRkIQM9BYAGa0Dj%2FXpUiAAAAAAElFTkSuQmCC")
-      repeat-x 0 0,
+  background:
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAkCAQAAADifZiHAAAAJ0lEQVQIW2P4L8zE8JeJ4R8q%2Bo%2BKCIH%2FjEA1TAyMSIgJRkIQM9BYAGa0Dj%2FXpUiAAAAAAElFTkSuQmCC")
+    repeat-x 0 0,
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAABCAQAAACvIOyMAAAAE0lEQVQIW2P8z8jAwMAIh0wICAAa0gETv9XXOgAAAABJRU5ErkJggg%3D%3D")
-      repeat-y 100% 0,
+    repeat-y 100% 0,
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAABCAQAAACvIOyMAAAAEklEQVQIW2P8L8TwDwn%2Bh0MGAKnjDAIoAAlcAAAAAElFTkSuQmCC")
-      repeat-y 0 0,
+    repeat-y 0 0,
     rgba(0, 0, 0, 0.4);
+}
+
+.footer a {
+  color: #00a8e3;
+}
+
+.header .content a {
+  text-align: center;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 287px;
+  margin-top: -30px;
+  width: 800px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .flex-1 a {
+  border-right: 1px solid #ccc;
+  text-align: center;
+}
+
+.footer .flex-2 a {
+  border-right: 1px solid #6e6e6e;
+  color: #00a8e3;
 }
 
 .header .nav ul li a {
@@ -72,17 +104,6 @@ body a {
   font-size: 12px;
   color: white;
   margin-right: -24px;
-}
-
-.header .content a {
-  text-align: center;
-  line-height: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 287px;
-  margin-top: -30px;
-  width: 800px;
 }
 
 .header .content .title {
@@ -119,31 +140,15 @@ body a {
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 0px 170px;
+  margin: 0 170px;
   grid-auto-flow: row;
   font-size: 12px;
   color: #6e6e6e;
 }
 
-.footer a {
-  text-decoration: none;
-}
-
 .footer .flex-1 {
   display: grid;
   grid-auto-flow: column;
-}
-.footer a {
-  color: #00a8e3;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
-.footer .flex-1 a {
-  border-right: 1px solid #ccc;
-  text-align: center;
 }
 
 .footer .flex-1 .img {
@@ -154,11 +159,6 @@ body a {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 238px 70px 80px;
-}
-
-.footer .flex-2 a {
-  border-right: 1px solid #6e6e6e;
-  color: #00a8e3;
 }
 
 .footer #privacy-footer {
