@@ -22,7 +22,7 @@ body a {
   justify-content: space-around;
   width: 80vw;
   background:
-    s-webkit-gradient(
+    -webkit-gradient(
       linear,
       0 0,
       0 100%,
