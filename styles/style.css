@@ -1,3 +1,11 @@
+body {
+  font-family: "Rambla", sans-serif;
+}
+
+body a {
+  text-decoration: none;
+}
+
 .header {
   height: 600px;
   background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg)
@@ -39,8 +47,17 @@
   line-height: 25px;
 }
 
+.header .nav ul li:hover {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAkCAQAAADifZiHAAAAJ0lEQVQIW2P4L8zE8JeJ4R8q%2Bo%2BKCIH%2FjEA1TAyMSIgJRkIQM9BYAGa0Dj%2FXpUiAAAAAAElFTkSuQmCC")
+      repeat-x 0 0,
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAABCAQAAACvIOyMAAAAE0lEQVQIW2P8z8jAwMAIh0wICAAa0gETv9XXOgAAAABJRU5ErkJggg%3D%3D")
+      repeat-y 100% 0,
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAABCAQAAACvIOyMAAAAEklEQVQIW2P8L8TwDwn%2Bh0MGAKnjDAIoAAlcAAAAAElFTkSuQmCC")
+      repeat-y 0 0,
+    rgba(0, 0, 0, 0.4);
+}
+
 .header .nav ul li a {
-  text-decoration: none;
   color: white;
 }
 
@@ -51,13 +68,13 @@
   border: 1px solid #646464;
 }
 
-.header .nav .item-0 .svg {
-  margin: 0px -20px 1px 0px;
-  font-size: 11px;
+.header .nav .nav-bar .item-9 svg {
+  font-size: 12px;
   color: white;
+  margin-right: -24px;
 }
 
-.header .content {
+.header .content a {
   text-align: center;
   line-height: 40px;
   display: flex;
@@ -105,18 +122,46 @@
   margin: 0px 170px;
   grid-auto-flow: row;
   font-size: 12px;
-  color: ##6e6e6e;
+  color: #6e6e6e;
+}
+
+.footer a {
+  text-decoration: none;
 }
 
 .footer .flex-1 {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-auto-flow: column;
+}
+.footer a {
+  color: #00a8e3;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 .footer .flex-1 a {
   border-right: 1px solid #ccc;
   text-align: center;
-  text-decoration: none;
-  flex-grow: 1;
+}
+
+.footer .flex-1 .img {
+  border-right: none;
+}
+
+.footer .flex-2 {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 238px 70px 80px;
+}
+
+.footer .flex-2 a {
+  border-right: 1px solid #6e6e6e;
   color: #00a8e3;
+}
+
+.footer #privacy-footer {
+  justify-self: center;
+  border-right: none;
 }
